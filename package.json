@@ -1,0 +1,23 @@
+{
+  "name": "boostrap4-breakpoint-helper",
+  "version": "1.0.0",
+  "description": "jquery helper which will help you with information about your current resolution and breakpoint",
+  "main": "bootstrap-breakpoint-helper.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kcko/boostrap4-breakpoint-helper.git"
+  },
+  "keywords": [
+    "boostrap4",
+    "jquery",
+    "helper",
+    "resolution",
+    "breakpoint"
+  ],
+  "author": "Roman Janko <admin@rjwebdesign.cz> (https://rjwebdesign.cz)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kcko/boostrap4-breakpoint-helper/issues"
+  },
+  "homepage": "https://github.com/Kcko/boostrap4-breakpoint-helper#readme"
+}
