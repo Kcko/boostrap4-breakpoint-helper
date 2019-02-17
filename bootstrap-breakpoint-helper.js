@@ -2,11 +2,10 @@
  * Bootstrap Breakpoint Helper
  *
  *
- * @author  Roman Janko <admin@rjwebdesign.cz>
+ * @author  Roman Janko <admin@rjwebdesign.cz> (https://rjwebdesign.cz)
  * @version  1.0.0
  *
  */
-
 ;(function() {
     'use strict';
 
@@ -54,15 +53,15 @@
                 $this.attr('data-resolution', winW);
 
                 // trigger publisher
-                $.publish("jq-bootstrap-breakpoint-helper/onresolutionchange", [selectedBreakpoint]);
+                $.Eventer.publish("bootstrap-breakpoint-helper/onresolutionchange", [selectedBreakpoint]);
 
             };
 
 
             var debounce;
-            $window.resize(function(){
+            $window.on('resize orientationchange', function() {
                 clearTimeout(debounce);
-                debounce = setTimeout(calculate, 250);
+                debounce = setTimeout(calculate, settings.debounceDelay);
             });
 
             calculate();  
@@ -77,6 +76,7 @@
 
 
         $.fn.bootstrapBreakpointHelper.defaults = {
+            debounceDelay: 250, // ms
             breakpoints: {
                 'xl': 1200,
                 'lg': 992,
@@ -86,8 +86,6 @@
             },
             lowerBreakpoint: 'xs'	
         };
-
-
 
     })(jQuery);
 })();
