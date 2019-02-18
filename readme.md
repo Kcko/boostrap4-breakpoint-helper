@@ -27,3 +27,16 @@ $.Eventer.subscribe("bootstrap-breakpoint-helper/onresolutionchange", function(e
     console.log(data); // info object about current resolution and breakpoint
 }
 ```
+
+## Plugin default settings
+```javascript
+debounceDelay: 250,  // debounce delay
+breakpoints: { // Defined breakpoints
+    'xl': 1200,
+    'lg': 992,
+    'md': 768,
+    'sm': 576,
+    'xs': 0
+},
+lowerBreakpoint: 'xs'	// Lowest breakpoint
+```
