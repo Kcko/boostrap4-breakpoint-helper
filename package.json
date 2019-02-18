@@ -1,8 +1,9 @@
 {
   "name": "@kcko/boostrap4-breakpoint-helper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "dependencies": {
-    "@kcko/jquery-pubsub-eventer": "^2"
+    "@kcko/jquery-pubsub-eventer": "^2.0.0",
+    "jquery": ">=1.7.2"
   },
   "description": "jquery helper which will help you with information about your current resolution and breakpoint",
   "main": "bootstrap-breakpoint-helper.js",
@@ -25,3 +26,4 @@
   },
   "homepage": "https://github.com/Kcko/boostrap4-breakpoint-helper#readme"
 }
+
